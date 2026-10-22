@@ -1,17 +1,17 @@
 const photoFiles = [
-  ['671222146164780dc3aed614_000015-p-1080.jpg', 330],
-  ['6710a7bd96145c59156fada6_20240511-IMG_1471-p-1080.jpg', 778],
-  ['6710a7bb61826c79e6405957_20240330-DSCF2827-p-1080.jpg', 530],
-  ['6710a7be02c631e7020ad6ef_20240511-IMG_1353-p-1080.jpg', 750],
-  ['6710a7c127b3e3017575c47c_20231018-IMG_1154-p-1080.jpg', 350],
-  ['6710a9dccb4ba8435d91cde7_DSCF2008-p-1080.jpg', 930],
-  ['6710a7bde2ff495668115f1b_20240106-DSCF2476-p-1080.jpg', 330],
-  ['6710a7bd40a77e5ff4366a81_20240114-DSCF2570-p-1080.jpg', 330],
-  ['6710a7bef9a2728043ec5ea4_20231019-IMG_1824-p-1080.jpg', 330],
-  ['6710a7bcc4cfa11400e3a95a_DSCF0521-p-1080.jpg', 700],
-  ['6710ad9bf92975b38806d2f2_20231018-IMG_1155-p-1080.jpg', 350],
-  ['6710aceb6312f1cfdb22d651_20240509-IMG_9743-p-1080.jpg', 350],
-  ['67fa56425a584206e8a10eea_20240330-DSCF2984-p-1080.jpg', 730]
+  ['01.jpg', 330],
+  ['02.jpg', 778],
+  ['03.jpg', 530],
+  ['04.jpg', 750],
+  ['05.jpg', 350],
+  ['06.jpg', 930],
+  ['07.jpg', 330],
+  ['08.jpg', 330],
+  ['09.jpg', 330],
+  ['10.jpg', 700],
+  ['11.jpg', 350],
+  ['12.jpg', 350],
+  ['13.jpg', 730]
 ];
 
 const gallery = document.querySelector('.gallery');
@@ -19,7 +19,7 @@ const viewport = gallery.querySelector('.gallery-viewport');
 const track = gallery.querySelector('.gallery-track');
 const dots = gallery.querySelector('.gallery-dots');
 const count = document.getElementById('photo-count');
-const baseUrl = 'https://cdn.prod.website-files.com/627b553a75f1c5052e36658a/';
+const baseUrl = 'assets/photos/';
 const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 const speed = 45; // Pixels per second; continuous rather than one photo every few seconds.
 const total = photoFiles.length;
