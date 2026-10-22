@@ -1,0 +1,1330 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Zicheng Zhu — CV</title>
+    <style>
+      @page {
+        size: letter;
+        margin: 44pt;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        background: #eee;
+      }
+      body {
+        --date-width: 74pt;
+        --column-gap: 14pt;
+        --content-offset: calc(var(--date-width) + var(--column-gap));
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 9pt;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #333;
+        -webkit-font-smoothing: antialiased;
+      }
+      p {
+        margin: 0;
+      }
+      header {
+        margin: 0 0 24pt var(--content-offset);
+        padding-bottom: 16pt;
+        border-bottom: 0.5pt solid #d0d0d0;
+      }
+      header p:first-child {
+        font-size: 22.5pt;
+        font-weight: 600;
+        line-height: 1.2;
+        margin-bottom: 10pt;
+        letter-spacing: -0.35pt;
+      }
+      header p:first-child strong {
+        font-weight: inherit;
+      }
+      h2 {
+        margin: 18pt 0 7pt var(--content-offset);
+        font-size: 18pt;
+        font-weight: 500;
+        line-height: 1.2;
+        letter-spacing: -0.35pt;
+        break-after: avoid;
+        page-break-after: avoid;
+      }
+      .row {
+        display: flex;
+        align-items: flex-start;
+        gap: var(--column-gap);
+        margin-bottom: 7pt;
+        break-inside: avoid;
+        page-break-inside: avoid;
+      }
+      aside {
+        width: var(--date-width);
+        flex: 0 0 var(--date-width);
+        padding-top: 2pt;
+        text-align: right;
+        font-size: 6.3pt;
+        line-height: 1.5;
+      }
+      article {
+        flex: 1;
+        min-width: 0;
+      }
+      article p {
+        orphans: 2;
+        widows: 2;
+      }
+      article p:first-child, strong {
+        font-weight: 700;
+      }
+      article p:only-child {
+        font-weight: 400;
+      }
+      a {
+        color: #164e91;
+        text-decoration: none;
+        overflow-wrap: anywhere;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      @media screen {
+        body {
+          width: 612pt;
+          max-width: 100%;
+          margin: 24px auto;
+          padding: 44pt;
+          background: #fff;
+          box-shadow: 0 1px 8px rgb(0 0 0 / 6%);
+        }
+      }
+      @media screen and (max-width: 620px) {
+        body {
+          --date-width: 58pt;
+          --column-gap: 10pt;
+          margin: 0 auto;
+          padding: 28px 16px;
+        }
+        h2 {
+          font-size: 18pt;
+        }
+      }
+      @media print {
+        html, body {
+          background: #fff;
+        }
+        body {
+          width: auto;
+          margin: 0;
+          padding: 0;
+        }
+        a {
+          color: inherit;
+        }
+      }
+      :root {
+        --purple: #8B65A5;
+        --orange: #C97845;
+      }
+      header .intro {
+        font-size: 9pt;
+        line-height: 1.5;
+        margin: 0 0 10pt;
+      }
+      header .contacts {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3pt 12pt;
+        font-size: 8pt;
+      }
+      .contacts a, .publication-links a, .award {
+        display: inline-flex;
+        align-items: baseline;
+        gap: 4pt;
+      }
+      .icon {
+        width: 0.95em;
+        height: 0.95em;
+        flex: 0 0 0.95em;
+        position: relative;
+        top: 0.08em;
+      }
+      a {
+        color: var(--purple);
+      }
+      aside {
+        font-size: 7.5pt;
+      }
+      .publication-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2pt 10pt;
+        margin-top: 2pt;
+        font-size: 8.5pt;
+        line-height: 1.5;
+        font-weight: 400;
+      }
+      .award {
+        color: var(--orange);
+        font-weight: 400;
+      }
+      @media screen and (max-width: 620px) {
+        body {
+          --date-width: 66pt;
+          --column-gap: 10pt;
+        }
+        header .contacts {
+          grid-template-columns: 1fr;
+        }
+      }
+      @media print {
+        a {
+          color: var(--purple);
+        }
+        .contacts a.download-cv {
+          display: none;
+        }
+        .award {
+          color: var(--orange);
+        }
+      }
+      header .contacts a {
+        color: #555;
+      }
+          .author-note {
+        margin: 0;
+        font-size: inherit;
+        color: #555;
+        font-weight: 400;
+      }
+    </style>
+    <link rel="stylesheet" href="cv-web.css?v=3">
+  </head>
+  <body>
+    <header>
+      <p><strong><a href="index.html">Zicheng Zhu</a></strong></p>
+      <p class="intro">I am interested in <strong>AI for human mental well-being</strong>, especially <strong>social well-being</strong>. Specifically, I am interested in the following questions: How does AI affect humans' mental well-being and their social connections with others? How can AI be designed and governed to better support human mental well-being and social engagement?</p>
+      <nav class="contacts" aria-label="Contact and profiles">
+        <a href="index.html">
+          <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12 2 1 11l2 2 2-1.6V22h5v-7h4v7h5V11.4l2 1.6 2-2L12 2Z"/>
+          </svg>
+          zicheng-zhu.com
+        </a>
+        <a href="mailto:zicheng@u.nus.edu">
+          <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M3 4h18a2 2 0 0 1 2 2v1L12 14 1 7V6a2 2 0 0 1 2-2Zm-2 5.4 10.5 6.7a1 1 0 0 0 1 0L23 9.4V18a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V9.4Z"/>
+          </svg>
+          zicheng@u.nus.edu
+        </a>
+        <a href="https://scholar.google.com/citations?user=fr_5mMQAAAAJ" target="_blank" rel="noopener noreferrer">
+          <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="m12 3 12 5-12 5L0 8l12-5ZM5 12l7 3 7-3v6c-4 3-10 3-14 0v-6ZM1 10h2v8H1zM0 18h4v3H0z"/>
+          </svg>
+          Google Scholar
+        </a>
+        <a href="https://www.linkedin.com/in/zicheng-zhu-a625a423a/" target="_blank" rel="noopener noreferrer">
+          <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path fill-rule="evenodd" d="M3 1h18a2 2 0 0 1 2 2v18a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2ZM5 9h3v11H5V9Zm1.5-5a1.7 1.7 0 1 0 0 3.4 1.7 1.7 0 0 0 0-3.4ZM10 9h3v1.5c.7-1.1 1.7-1.8 3.2-1.8 3 0 3.8 1.8 3.8 4.7V20h-3v-6.2c0-1.5-.3-2.4-1.8-2.4-1.6 0-2.2 1.1-2.2 2.6v6h-3V9Z"/>
+          </svg>
+          LinkedIn
+        </a>
+        <a class="download-cv" href="Zicheng-Zhu-CV.pdf?v=2" download="Zicheng-Zhu-CV.pdf">
+          <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M5 2h9l6 6v13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1Zm8 1.5V9h5.5L13 3.5Z"/>
+            <path d="M8 15h8M8 18h8" fill="none" stroke="#fff" stroke-width="1.2" stroke-linecap="round"/>
+          </svg>
+          CV PDF
+        </a>
+      </nav>
+    </header>
+
+    <!-- Employment -->
+    <h2>Employment</h2>
+    <div class="row">
+      <aside>
+        <p>Starting 2026/11</p>
+        <p>Kyoto, Japan</p>
+      </aside>
+      <article>
+        <p>Kyoto University</p>
+        <p>Assistant Professor</p>
+        <p>School of Informatics</p>
+      </article>
+    </div>
+    <div class="row">
+      <aside>
+        <p>2023/11 - 2026/09</p>
+        <p>Singapore</p>
+      </aside>
+      <article>
+        <p>National University of Singapore</p>
+        <p>Research Fellow</p>
+        <p>School of Computing</p>
+        <p>Mentor: Yi-Chieh Lee</p>
+      </article>
+    </div>
+
+    <!-- Education -->
+    <h2>Education</h2>
+    <div class="row">
+      <aside>
+        <p>2019 - 2024</p>
+        <p>Singapore</p>
+      </aside>
+      <article>
+        <p><strong>National University of Singapore</strong></p>
+        <p>PhD in Communications and New Media</p>
+        <p>Advisors: Renwen Zhang, Alex Mitchell</p>
+        <p>Committee: Weiyu Zhang, Hichang Cho</p>
+        <p>Dissertation: Digital Wellbeing in Gaming: an Examination Through Technological and Contextual Lenses</p>
+      </article>
+    </div>
+    <div class="row">
+      <aside>
+        <p>2017 - 2019</p>
+        <p>Boston, USA</p>
+      </aside>
+      <article>
+        <p>Boston University</p>
+        <p>MSc in Marketing Communication Research</p>
+      </article>
+    </div>
+    <div class="row">
+      <aside>
+        <p>2013 - 2017</p>
+        <p>Guangzhou, China</p>
+      </aside>
+      <article>
+        <p>Sun Yat-sen University</p>
+        <p>BA in Internet and New Media</p>
+      </article>
+    </div>
+
+    <!-- Publications -->
+    <h2>Publications</h2>
+    <div class="row">
+      <aside>
+        <p>CSCW 2026</p>
+      </aside>
+      <article>
+        <p>Shared Similarity Between Humans and Chatbots: Exploring Human Willingness to Seek Social Support From Chatbots</p>
+        <p><strong>Zicheng Zhu</strong>, Tianqi Song, Jefferson Lim, Chi-Lan Yang, Yi-Chieh Lee</p>
+        <p><em>Proceedings of the ACM on Human-Computer Interaction</em></p>
+      
+        <div class="publication-links">
+          <a href="https://dl.acm.org/doi/10.1145/3816998" target="_blank" rel="noopener noreferrer">
+            <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M14.1 2.2a5.5 5.5 0 0 1 7.7 7.7l-4.3 4.3a5.5 5.5 0 0 1-7.8 0l2.1-2.1a2.5 2.5 0 0 0 3.5 0l4.4-4.3a2.5 2.5 0 0 0-3.5-3.5l-2.3 2.3a7.5 7.5 0 0 0-3.6-.7l3.8-3.7ZM9.9 21.8a5.5 5.5 0 0 1-7.7-7.7l4.3-4.3a5.5 5.5 0 0 1 7.8 0l-2.1 2.1a2.5 2.5 0 0 0-3.5 0l-4.4 4.3a2.5 2.5 0 0 0 3.5 3.5l2.3-2.3a7.5 7.5 0 0 0 3.6.7l-3.8 3.7Z"/>
+            </svg>
+            Paper
+          </a>
+        </div>
+      </article>
+    </div>
+        <div class="row">
+      <aside>
+        <p>UIST 2026</p>
+      </aside>
+      <article>
+        <p>ASIDE: From Conflict Participants to Co-Observers Through Dyadic Spectator Reflection</p>
+        <p>Xinyi Zhang, Jingting He, <strong>Zicheng Zhu*</strong>, and Yuxin Su</p>
+        <p><em>Proceedings of the ACM Symposium on User Interface Software and Technology</em></p>
+        <div class="publication-links">
+          <a href="https://arxiv.org/abs/2608.05690" target="_blank" rel="noopener noreferrer">
+            <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M14.1 2.2a5.5 5.5 0 0 1 7.7 7.7l-4.3 4.3a5.5 5.5 0 0 1-7.8 0l2.1-2.1a2.5 2.5 0 0 0 3.5 0l4.4-4.3a2.5 2.5 0 0 0-3.5-3.5l-2.3 2.3a7.5 7.5 0 0 0-3.6-.7l3.8-3.7ZM9.9 21.8a5.5 5.5 0 0 1-7.7-7.7l4.3-4.3a5.5 5.5 0 0 1 7.8 0l-2.1 2.1a2.5 2.5 0 0 0-3.5 0l-4.4 4.3a2.5 2.5 0 0 0 3.5 3.5l2.3-2.3a7.5 7.5 0 0 0 3.6.7l-3.8 3.7Z"/>
+            </svg>
+            Preprint
+          </a>
+          <span class="author-note">* Corresponding author</span>
+        </div>
+      </article>
+    </div>
+    <div class="row">
+      <aside>
+        <p>CSCW 2026</p>
+      </aside>
+      <article>
+        <p>Alleviating Linguistic and Interactional Anxiety of Non-Native Speakers in Multilingual Communication</p>
+        <p>Peinuan Qin, Justin Peng, Zhengtao Xu, Jiting Cheng, <strong>Zicheng Zhu</strong>, Naomi Yamashita, Yi-Chieh Lee</p>
+        <p><em>Proceedings of the ACM on Human-Computer Interaction</em></p>
+        <div class="publication-links">
+          <a href="https://dl.acm.org/doi/10.1145/3816899" target="_blank" rel="noopener noreferrer">
+            <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M14.1 2.2a5.5 5.5 0 0 1 7.7 7.7l-4.3 4.3a5.5 5.5 0 0 1-7.8 0l2.1-2.1a2.5 2.5 0 0 0 3.5 0l4.4-4.3a2.5 2.5 0 0 0-3.5-3.5l-2.3 2.3a7.5 7.5 0 0 0-3.6-.7l3.8-3.7ZM9.9 21.8a5.5 5.5 0 0 1-7.7-7.7l4.3-4.3a5.5 5.5 0 0 1 7.8 0l-2.1 2.1a2.5 2.5 0 0 0-3.5 0l-4.4 4.3a2.5 2.5 0 0 0 3.5 3.5l2.3-2.3a7.5 7.5 0 0 0 3.6.7l-3.8 3.7Z"/>
+            </svg>
+            Paper
+          </a>
+        </div>
+      </article>
+    </div>
+    <div class="row">
+      <aside>
+        <p>DIS 2026</p>
+      </aside>
+      <article>
+        <p>Designing with Tensions: Older Adults&#x27; Emotional Support-Seeking Under System-Level Constraints in Conversational AI</p>
+        <p>Mengqi Shi, Tianqi Song, <strong>Zicheng Zhu</strong>, Yi-Chieh Lee</p>
+        <p><em>Proceedings of Designing Interactive Systems</em></p>
+        <div class="publication-links">
+          <a href="https://dl.acm.org/doi/10.1145/3800645.3812902" target="_blank" rel="noopener noreferrer">
+            <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M14.1 2.2a5.5 5.5 0 0 1 7.7 7.7l-4.3 4.3a5.5 5.5 0 0 1-7.8 0l2.1-2.1a2.5 2.5 0 0 0 3.5 0l4.4-4.3a2.5 2.5 0 0 0-3.5-3.5l-2.3 2.3a7.5 7.5 0 0 0-3.6-.7l3.8-3.7ZM9.9 21.8a5.5 5.5 0 0 1-7.7-7.7l4.3-4.3a5.5 5.5 0 0 1 7.8 0l-2.1 2.1a2.5 2.5 0 0 0-3.5 0l-4.4 4.3a2.5 2.5 0 0 0 3.5 3.5l2.3-2.3a7.5 7.5 0 0 0 3.6.7l-3.8 3.7Z"/>
+            </svg>
+            Paper
+          </a>
+        </div>
+      </article>
+    </div>
+    <div class="row">
+      <aside>
+        <p>CHI 2026</p>
+      </aside>
+      <article>
+        <p>ChatLearn: Leveraging Non-Native Speaker Communication Challenges as Language Learning Opportunities</p>
+        <p>Peinuan Qin, Yugin Tan, Jingzhu Chen, Nattapat Boonprakong, <strong>Zicheng Zhu</strong>, Naomi Yamashita, Yi-Chieh Lee</p>
+        <p><em>Proceedings of the CHI Conference on Human Factors in Computing Systems</em></p>
+        <div class="publication-links">
+          <a href="https://doi.org/10.1145/3772318.3791839" target="_blank" rel="noopener noreferrer">
+            <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M14.1 2.2a5.5 5.5 0 0 1 7.7 7.7l-4.3 4.3a5.5 5.5 0 0 1-7.8 0l2.1-2.1a2.5 2.5 0 0 0 3.5 0l4.4-4.3a2.5 2.5 0 0 0-3.5-3.5l-2.3 2.3a7.5 7.5 0 0 0-3.6-.7l3.8-3.7ZM9.9 21.8a5.5 5.5 0 0 1-7.7-7.7l4.3-4.3a5.5 5.5 0 0 1 7.8 0l-2.1 2.1a2.5 2.5 0 0 0-3.5 0l-4.4 4.3a2.5 2.5 0 0 0 3.5 3.5l2.3-2.3a7.5 7.5 0 0 0 3.6.7l-3.8 3.7Z"/>
+            </svg>
+            Paper
+          </a>
+        </div>
+      </article>
+    </div>
+    <div class="row">
+      <aside>
+        <p>CHI 2026</p>
+      </aside>
+      <article>
+        <p>AI-exhibited Personality Traits Can Shape Human Self-concept through Conversations</p>
+        <p>Jingshu Li, Tianqi Song, Nattapat Boonprakong, <strong>Zicheng Zhu</strong>, Yitian Yang, and Yi-Chieh Lee</p>
+        <p><em>Proceedings of the CHI Conference on Human Factors in Computing Systems</em></p>
+        <div class="publication-links">
+          <a href="https://dl.acm.org/doi/10.1145/3772318.3790654" target="_blank" rel="noopener noreferrer">
+            <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M14.1 2.2a5.5 5.5 0 0 1 7.7 7.7l-4.3 4.3a5.5 5.5 0 0 1-7.8 0l2.1-2.1a2.5 2.5 0 0 0 3.5 0l4.4-4.3a2.5 2.5 0 0 0-3.5-3.5l-2.3 2.3a7.5 7.5 0 0 0-3.6-.7l3.8-3.7ZM9.9 21.8a5.5 5.5 0 0 1-7.7-7.7l4.3-4.3a5.5 5.5 0 0 1 7.8 0l-2.1 2.1a2.5 2.5 0 0 0-3.5 0l-4.4 4.3a2.5 2.5 0 0 0 3.5 3.5l2.3-2.3a7.5 7.5 0 0 0 3.6.7l-3.8 3.7Z"/>
+            </svg>
+            Paper
+          </a>
+          <span class="award">
+            <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M7 2h10v2h5v4c0 3.3-2.7 6-6 6h-.1a5 5 0 0 1-2.4 1.8V19H17v3H7v-3h3.5v-3.2A5 5 0 0 1 8.1 14H8c-3.3 0-6-2.7-6-6V4h5V2ZM7 6H4v2a4 4 0 0 0 3 3.9V6Zm10 0v5.9A4 4 0 0 0 20 8V6h-3Z"/>
+            </svg>
+            Best Paper Honorable Mention
+          </span>
+        </div>
+      </article>
+    </div>
+    <div class="row">
+      <aside>
+        <p>CHI 2025</p>
+      </aside>
+      <article>
+        <p>The Benefits of Prosociality towards AI Agents: Examining the Effects of Helping AI Agents on Human Well-Being</p>
+        <p><strong>Zicheng Zhu</strong>, Yugin Tan, Naomi Yamashita, Yi-Chieh Lee, and Renwen Zhang</p>
+        <p><em>Proceedings of the CHI Conference on Human Factors in Computing Systems</em></p>
+        <div class="publication-links">
+          <a href="https://dl.acm.org/doi/10.1145/3706598.3713116" target="_blank" rel="noopener noreferrer">
+            <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M14.1 2.2a5.5 5.5 0 0 1 7.7 7.7l-4.3 4.3a5.5 5.5 0 0 1-7.8 0l2.1-2.1a2.5 2.5 0 0 0 3.5 0l4.4-4.3a2.5 2.5 0 0 0-3.5-3.5l-2.3 2.3a7.5 7.5 0 0 0-3.6-.7l3.8-3.7ZM9.9 21.8a5.5 5.5 0 0 1-7.7-7.7l4.3-4.3a5.5 5.5 0 0 1 7.8 0l-2.1 2.1a2.5 2.5 0 0 0-3.5 0l-4.4 4.3a2.5 2.5 0 0 0 3.5 3.5l2.3-2.3a7.5 7.5 0 0 0 3.6.7l-3.8 3.7Z"/>
+            </svg>
+            Paper
+          </a>
+          <span class="award">
+            <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M7 2h10v2h5v4c0 3.3-2.7 6-6 6h-.1a5 5 0 0 1-2.4 1.8V19H17v3H7v-3h3.5v-3.2A5 5 0 0 1 8.1 14H8c-3.3 0-6-2.7-6-6V4h5V2ZM7 6H4v2a4 4 0 0 0 3 3.9V6Zm10 0v5.9A4 4 0 0 0 20 8V6h-3Z"/>
+            </svg>
+            Best Paper
+          </span>
+        </div>
+      </article>
+    </div>
+    <div class="row">
+      <aside>
+        <p>CHI 2025</p>
+      </aside>
+      <article>
+        <p>Mining Evidence about Your Symptoms: Mitigating Availability Bias in Online Self-Diagnosis</p>
+        <p>Junti Zhang, <strong>Zicheng Zhu</strong>, Jingshu Li, and Yi-Chieh Lee</p>
+        <p><em>Proceedings of the CHI Conference on Human Factors in Computing Systems</em></p>
+        <div class="publication-links">
+          <a href="https://dl.acm.org/doi/10.1145/3706598.3713805" target="_blank" rel="noopener noreferrer">
+            <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M14.1 2.2a5.5 5.5 0 0 1 7.7 7.7l-4.3 4.3a5.5 5.5 0 0 1-7.8 0l2.1-2.1a2.5 2.5 0 0 0 3.5 0l4.4-4.3a2.5 2.5 0 0 0-3.5-3.5l-2.3 2.3a7.5 7.5 0 0 0-3.6-.7l3.8-3.7ZM9.9 21.8a5.5 5.5 0 0 1-7.7-7.7l4.3-4.3a5.5 5.5 0 0 1 7.8 0l-2.1 2.1a2.5 2.5 0 0 0-3.5 0l-4.4 4.3a2.5 2.5 0 0 0 3.5 3.5l2.3-2.3a7.5 7.5 0 0 0 3.6.7l-3.8 3.7Z"/>
+            </svg>
+            Paper
+          </a>
+        </div>
+      </article>
+    </div>
+    <div class="row">
+      <aside>
+        <p>CSCW 2025</p>
+      </aside>
+      <article>
+        <p>Multi-Agents are Social Groups: Investigating Social Influence of Multiple Agents in Human-Agent Interactions</p>
+        <p>Tianqi Song, Yugin Tan, <strong>Zicheng Zhu</strong>, Yibin Feng, and Yi-Chieh Lee</p>
+        <p><em>Proceedings of the ACM on Human-Computer Interaction</em></p>
+        <div class="publication-links">
+          <a href="https://dl.acm.org/doi/10.1145/3757633" target="_blank" rel="noopener noreferrer">
+            <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M14.1 2.2a5.5 5.5 0 0 1 7.7 7.7l-4.3 4.3a5.5 5.5 0 0 1-7.8 0l2.1-2.1a2.5 2.5 0 0 0 3.5 0l4.4-4.3a2.5 2.5 0 0 0-3.5-3.5l-2.3 2.3a7.5 7.5 0 0 0-3.6-.7l3.8-3.7ZM9.9 21.8a5.5 5.5 0 0 1-7.7-7.7l4.3-4.3a5.5 5.5 0 0 1 7.8 0l-2.1 2.1a2.5 2.5 0 0 0-3.5 0l-4.4 4.3a2.5 2.5 0 0 0 3.5 3.5l2.3-2.3a7.5 7.5 0 0 0 3.6.7l-3.8 3.7Z"/>
+            </svg>
+            Paper
+          </a>
+          <span class="award">
+            <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M7 2h10v2h5v4c0 3.3-2.7 6-6 6h-.1a5 5 0 0 1-2.4 1.8V19H17v3H7v-3h3.5v-3.2A5 5 0 0 1 8.1 14H8c-3.3 0-6-2.7-6-6V4h5V2ZM7 6H4v2a4 4 0 0 0 3 3.9V6Zm10 0v5.9A4 4 0 0 0 20 8V6h-3Z"/>
+            </svg>
+            Methods Recognitions
+          </span>
+        </div>
+      </article>
+    </div>
+    <div class="row">
+      <aside>
+        <p>CSCW 2025</p>
+      </aside>
+      <article>
+        <p>Exploring the Effects of Chatbot Anthropomorphism and Human Empathy on Human Prosocial Behavior Toward Chatbots</p>
+        <p>Jingshu Li, <strong>Zicheng Zhu</strong>, Renwen Zhang, and Yi-Chieh Lee</p>
+        <p><em>Proceedings of the ACM on Human-Computer Interaction</em></p>
+        <div class="publication-links">
+          <a href="https://dl.acm.org/doi/10.1145/3757596" target="_blank" rel="noopener noreferrer">
+            <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M14.1 2.2a5.5 5.5 0 0 1 7.7 7.7l-4.3 4.3a5.5 5.5 0 0 1-7.8 0l2.1-2.1a2.5 2.5 0 0 0 3.5 0l4.4-4.3a2.5 2.5 0 0 0-3.5-3.5l-2.3 2.3a7.5 7.5 0 0 0-3.6-.7l3.8-3.7ZM9.9 21.8a5.5 5.5 0 0 1-7.7-7.7l4.3-4.3a5.5 5.5 0 0 1 7.8 0l-2.1 2.1a2.5 2.5 0 0 0-3.5 0l-4.4 4.3a2.5 2.5 0 0 0 3.5 3.5l2.3-2.3a7.5 7.5 0 0 0 3.6.7l-3.8 3.7Z"/>
+            </svg>
+            Paper
+          </a>
+        </div>
+      </article>
+    </div>
+    <div class="row">
+      <aside>
+        <p>CSCW 2025</p>
+      </aside>
+      <article>
+        <p>AI-Based Speaking Assistant: Supporting Non-Native Speakers’ Speaking in Real-Time Multilingual Communication</p>
+        <p>Peinuan Qin, <strong>Zicheng Zhu</strong>, Naomi Yamashita, Yitian Yang, Keita Suga, and Yi-Chieh Lee</p>
+        <p><em>Proceedings of the ACM on Human-Computer Interaction</em></p>
+        <div class="publication-links">
+          <a href="https://dl.acm.org/doi/10.1145/3757455" target="_blank" rel="noopener noreferrer">
+            <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M14.1 2.2a5.5 5.5 0 0 1 7.7 7.7l-4.3 4.3a5.5 5.5 0 0 1-7.8 0l2.1-2.1a2.5 2.5 0 0 0 3.5 0l4.4-4.3a2.5 2.5 0 0 0-3.5-3.5l-2.3 2.3a7.5 7.5 0 0 0-3.6-.7l3.8-3.7ZM9.9 21.8a5.5 5.5 0 0 1-7.7-7.7l4.3-4.3a5.5 5.5 0 0 1 7.8 0l-2.1 2.1a2.5 2.5 0 0 0-3.5 0l-4.4 4.3a2.5 2.5 0 0 0 3.5 3.5l2.3-2.3a7.5 7.5 0 0 0 3.6.7l-3.8 3.7Z"/>
+            </svg>
+            Paper
+          </a>
+        </div>
+      </article>
+    </div>
+    <div class="row">
+      <aside>
+        <p>Telemat. Inform. 2025</p>
+      </aside>
+      <article>
+        <p>Contextual Influences and Agency to Transform Context in Excessive Gaming: A Social-Ecological Perspective</p>
+        <p><strong>Zicheng Zhu</strong>, Renwen Zhang, and Alex Mitchell</p>
+        <p><em>Telematics and Informatics</em></p>
+        <div class="publication-links">
+          <a href="https://www.sciencedirect.com/science/article/abs/pii/S0736585325000632" target="_blank" rel="noopener noreferrer">
+            <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M14.1 2.2a5.5 5.5 0 0 1 7.7 7.7l-4.3 4.3a5.5 5.5 0 0 1-7.8 0l2.1-2.1a2.5 2.5 0 0 0 3.5 0l4.4-4.3a2.5 2.5 0 0 0-3.5-3.5l-2.3 2.3a7.5 7.5 0 0 0-3.6-.7l3.8-3.7ZM9.9 21.8a5.5 5.5 0 0 1-7.7-7.7l4.3-4.3a5.5 5.5 0 0 1 7.8 0l-2.1 2.1a2.5 2.5 0 0 0-3.5 0l-4.4 4.3a2.5 2.5 0 0 0 3.5 3.5l2.3-2.3a7.5 7.5 0 0 0 3.6.7l-3.8 3.7Z"/>
+            </svg>
+            Paper
+          </a>
+        </div>
+      </article>
+    </div>
+    <div class="row">
+      <aside>
+        <p>Cyberpsychol Behav </p>
+        <p>Soc Netw 2025</p>
+      </aside>
+      <article>
+        <p>Understanding Problematic Gaming Through Self-Determined vs. Non Self-Determined Motivation: Two Mediating Pathways of Harmonious and Obsessive Passion </p>
+        <p>Wenjing Pan, Jikai Sun, <strong>Zicheng Zhu</strong>, Renwen Zhang, and Xiaoning Han</p>
+        <p><em>Cyberpsychology, Behavior, and Social Networking</em></p>
+        <div class="publication-links">
+          <a href="https://www.liebertpub.com/doi/10.1089/cyber.2024.0428" target="_blank" rel="noopener noreferrer">
+            <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M14.1 2.2a5.5 5.5 0 0 1 7.7 7.7l-4.3 4.3a5.5 5.5 0 0 1-7.8 0l2.1-2.1a2.5 2.5 0 0 0 3.5 0l4.4-4.3a2.5 2.5 0 0 0-3.5-3.5l-2.3 2.3a7.5 7.5 0 0 0-3.6-.7l3.8-3.7ZM9.9 21.8a5.5 5.5 0 0 1-7.7-7.7l4.3-4.3a5.5 5.5 0 0 1 7.8 0l-2.1 2.1a2.5 2.5 0 0 0-3.5 0l-4.4 4.3a2.5 2.5 0 0 0 3.5 3.5l2.3-2.3a7.5 7.5 0 0 0 3.6.7l-3.8 3.7Z"/>
+            </svg>
+            Paper
+          </a>
+        </div>
+      </article>
+    </div>
+    <div class="row">
+      <aside>
+        <p>JMIR 2023</p>
+      </aside>
+      <article>
+        <p>Examining the Persuasive Effects of Health Communication in Short Videos: Systematic Review</p>
+        <p><strong>Zicheng Zhu</strong>, Shiyu Liu, and Renwen Zhang</p>
+        <p><em>Journal of Medical Internet Research</em></p>
+        <div class="publication-links">
+          <a href="https://www.jmir.org/2023/1/e48508/" target="_blank" rel="noopener noreferrer">
+            <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M14.1 2.2a5.5 5.5 0 0 1 7.7 7.7l-4.3 4.3a5.5 5.5 0 0 1-7.8 0l2.1-2.1a2.5 2.5 0 0 0 3.5 0l4.4-4.3a2.5 2.5 0 0 0-3.5-3.5l-2.3 2.3a7.5 7.5 0 0 0-3.6-.7l3.8-3.7ZM9.9 21.8a5.5 5.5 0 0 1-7.7-7.7l4.3-4.3a5.5 5.5 0 0 1 7.8 0l-2.1 2.1a2.5 2.5 0 0 0-3.5 0l-4.4 4.3a2.5 2.5 0 0 0 3.5 3.5l2.3-2.3a7.5 7.5 0 0 0 3.6.7l-3.8 3.7Z"/>
+            </svg>
+            Paper
+          </a>
+        </div>
+      </article>
+    </div>
+    <div class="row">
+      <aside>
+        <p>JCMC 2022</p>
+      </aside>
+      <article>
+        <p>Toxicity and Prosocial Behaviors in Massively Multiplayer Online Games: The Role of Mutual Dependence, Power, and Passion</p>
+        <p><strong>Zicheng Zhu</strong>, Renwen Zhang, and Yuren Qin</p>
+        <p><em>Journal of Computer-Mediated Communication</em></p>
+        <div class="publication-links">
+          <a href="https://academic.oup.com/jcmc/article/27/6/zmac017/6700672" target="_blank" rel="noopener noreferrer">
+            <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M14.1 2.2a5.5 5.5 0 0 1 7.7 7.7l-4.3 4.3a5.5 5.5 0 0 1-7.8 0l2.1-2.1a2.5 2.5 0 0 0 3.5 0l4.4-4.3a2.5 2.5 0 0 0-3.5-3.5l-2.3 2.3a7.5 7.5 0 0 0-3.6-.7l3.8-3.7ZM9.9 21.8a5.5 5.5 0 0 1-7.7-7.7l4.3-4.3a5.5 5.5 0 0 1 7.8 0l-2.1 2.1a2.5 2.5 0 0 0-3.5 0l-4.4 4.3a2.5 2.5 0 0 0 3.5 3.5l2.3-2.3a7.5 7.5 0 0 0 3.6.7l-3.8 3.7Z"/>
+            </svg>
+            Paper
+          </a>
+        </div>
+      </article>
+    </div>
+    <div class="row">
+      <aside>
+        <p>DIS 2022</p>
+      </aside>
+      <article>
+        <p>Developing Intentional Relationships With Technologies: An Exploratory Study of Players’ Experiences With Built-in Interventions in Games</p>
+        <p><strong>Zicheng Zhu</strong>, Alex Mitchell, and Renwen Zhang</p>
+        <p><em>Proceedings of Designing Interactive Systems</em></p>
+        <div class="publication-links">
+          <a href="https://dl.acm.org/doi/10.1145/3532106.3533460" target="_blank" rel="noopener noreferrer">
+            <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M14.1 2.2a5.5 5.5 0 0 1 7.7 7.7l-4.3 4.3a5.5 5.5 0 0 1-7.8 0l2.1-2.1a2.5 2.5 0 0 0 3.5 0l4.4-4.3a2.5 2.5 0 0 0-3.5-3.5l-2.3 2.3a7.5 7.5 0 0 0-3.6-.7l3.8-3.7ZM9.9 21.8a5.5 5.5 0 0 1-7.7-7.7l4.3-4.3a5.5 5.5 0 0 1 7.8 0l-2.1 2.1a2.5 2.5 0 0 0-3.5 0l-4.4 4.3a2.5 2.5 0 0 0 3.5 3.5l2.3-2.3a7.5 7.5 0 0 0 3.6.7l-3.8 3.7Z"/>
+            </svg>
+            Paper
+          </a>
+        </div>
+      </article>
+    </div>
+
+    <!-- Extended Abstracts -->
+    <h2>Extended Abstracts</h2>
+    <div class="row">
+      <aside>
+        <p>CHI 2026</p>
+      </aside>
+      <article>
+        <p>When Humans Don&#x27;t Feel Like an Option: Contextual Factors That Shape When Older Adults Turn to Conversational AI for Emotional Support</p>
+        <p>Mengqi Shi, Tianqi Song, <strong>Zicheng Zhu</strong>, and Yi-Chieh Lee</p>
+        <p><em>Proceedings of the CHI Conference Extended Abstracts on Human Factors in Computing Systems</em></p>
+        <div class="publication-links">
+          <a href="https://doi.org/10.1145/3772363.3798404" target="_blank" rel="noopener noreferrer">
+            <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M14.1 2.2a5.5 5.5 0 0 1 7.7 7.7l-4.3 4.3a5.5 5.5 0 0 1-7.8 0l2.1-2.1a2.5 2.5 0 0 0 3.5 0l4.4-4.3a2.5 2.5 0 0 0-3.5-3.5l-2.3 2.3a7.5 7.5 0 0 0-3.6-.7l3.8-3.7ZM9.9 21.8a5.5 5.5 0 0 1-7.7-7.7l4.3-4.3a5.5 5.5 0 0 1 7.8 0l-2.1 2.1a2.5 2.5 0 0 0-3.5 0l-4.4 4.3a2.5 2.5 0 0 0 3.5 3.5l2.3-2.3a7.5 7.5 0 0 0 3.6.7l-3.8 3.7Z"/>
+            </svg>
+            Paper
+          </a>
+        </div>
+      </article>
+    </div>
+    <div class="row">
+      <aside>
+        <p>CHI 2026</p>
+      </aside>
+      <article>
+        <p>InterPilot: Exploring the Design Space of AI-assisted Job Interview Support for HR Professionals</p>
+        <p>Zhengtao Xu, Zimo Xia, <strong>Zicheng Zhu</strong>, Nattapat Boonprakong, Yu-An Chen, Rabih Zbib, Mr. Casimiro Pio Carrino, Yi-Chieh Lee</p>
+        <p><em>Proceedings of the CHI Conference Extended Abstracts on Human Factors in Computing Systems</em></p>
+        <div class="publication-links">
+          <a href="https://doi.org/10.1145/3772363.3798373" target="_blank" rel="noopener noreferrer">
+            <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M14.1 2.2a5.5 5.5 0 0 1 7.7 7.7l-4.3 4.3a5.5 5.5 0 0 1-7.8 0l2.1-2.1a2.5 2.5 0 0 0 3.5 0l4.4-4.3a2.5 2.5 0 0 0-3.5-3.5l-2.3 2.3a7.5 7.5 0 0 0-3.6-.7l3.8-3.7ZM9.9 21.8a5.5 5.5 0 0 1-7.7-7.7l4.3-4.3a5.5 5.5 0 0 1 7.8 0l-2.1 2.1a2.5 2.5 0 0 0-3.5 0l-4.4 4.3a2.5 2.5 0 0 0 3.5 3.5l2.3-2.3a7.5 7.5 0 0 0 3.6.7l-3.8 3.7Z"/>
+            </svg>
+            Paper
+          </a>
+        </div>
+      </article>
+    </div>
+    <div class="row">
+      <aside>
+        <p>CHI 2026</p>
+      </aside>
+      <article>
+        <p>ConvScale: Conversational Interviews for Scale-Aligned Measurement</p>
+        <p>Peinuan Qin, Jingzhu Chen, Yitian Yang, Han Meng, <strong>Zicheng Zhu</strong>, Yi-Chieh Lee</p>
+        <p><em>Proceedings of the CHI Conference Extended Abstracts on Human Factors in Computing Systems</em></p>
+        <div class="publication-links">
+          <a href="https://doi.org/10.1145/3772363.3798684" target="_blank" rel="noopener noreferrer">
+            <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M14.1 2.2a5.5 5.5 0 0 1 7.7 7.7l-4.3 4.3a5.5 5.5 0 0 1-7.8 0l2.1-2.1a2.5 2.5 0 0 0 3.5 0l4.4-4.3a2.5 2.5 0 0 0-3.5-3.5l-2.3 2.3a7.5 7.5 0 0 0-3.6-.7l3.8-3.7ZM9.9 21.8a5.5 5.5 0 0 1-7.7-7.7l4.3-4.3a5.5 5.5 0 0 1 7.8 0l-2.1 2.1a2.5 2.5 0 0 0-3.5 0l-4.4 4.3a2.5 2.5 0 0 0 3.5 3.5l2.3-2.3a7.5 7.5 0 0 0 3.6.7l-3.8 3.7Z"/>
+            </svg>
+            Paper
+          </a>
+        </div>
+      </article>
+    </div>
+    <div class="row">
+      <aside>
+        <p>CHI 2026</p>
+      </aside>
+      <article>
+        <p>&quot;Clumsiness is Love Itself&quot;: How Long-Distance Couples Experience, Envision, and Resist AI in Intimate Relationships</p>
+        <p>Xinyi Zhang, <strong>Zicheng Zhu*</strong>, Yuxin Su</p>
+        <p><em>Proceedings of the CHI Conference Extended Abstracts on Human Factors in Computing Systems</em></p>
+        <div class="publication-links">
+          <a href="https://doi.org/10.1145/3772363.3798308" target="_blank" rel="noopener noreferrer">
+            <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M14.1 2.2a5.5 5.5 0 0 1 7.7 7.7l-4.3 4.3a5.5 5.5 0 0 1-7.8 0l2.1-2.1a2.5 2.5 0 0 0 3.5 0l4.4-4.3a2.5 2.5 0 0 0-3.5-3.5l-2.3 2.3a7.5 7.5 0 0 0-3.6-.7l3.8-3.7ZM9.9 21.8a5.5 5.5 0 0 1-7.7-7.7l4.3-4.3a5.5 5.5 0 0 1 7.8 0l-2.1 2.1a2.5 2.5 0 0 0-3.5 0l-4.4 4.3a2.5 2.5 0 0 0 3.5 3.5l2.3-2.3a7.5 7.5 0 0 0 3.6.7l-3.8 3.7Z"/>
+            </svg>
+            Paper
+          </a>
+          <span class="author-note">* Corresponding author</span>
+        </div>
+      </article>
+    </div>
+    <div class="row">
+      <aside>
+        <p> CHI 2025</p>
+      </aside>
+      <article>
+        <p>Greater than the Sum of its Parts: Exploring Social Influence of Multi-Agents</p>
+        <p>Tianqi Song, Yugin Tan, <strong>Zicheng Zhu</strong>, Yibin Feng, and Yi-Chieh Lee</p>
+        <p><em>Proceedings of the CHI Conference Extended Abstracts on Human Factors in Computing Systems</em></p>
+        <div class="publication-links">
+          <a href="https://dl.acm.org/doi/10.1145/3706599.3719973" target="_blank" rel="noopener noreferrer">
+            <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M14.1 2.2a5.5 5.5 0 0 1 7.7 7.7l-4.3 4.3a5.5 5.5 0 0 1-7.8 0l2.1-2.1a2.5 2.5 0 0 0 3.5 0l4.4-4.3a2.5 2.5 0 0 0-3.5-3.5l-2.3 2.3a7.5 7.5 0 0 0-3.6-.7l3.8-3.7ZM9.9 21.8a5.5 5.5 0 0 1-7.7-7.7l4.3-4.3a5.5 5.5 0 0 1 7.8 0l-2.1 2.1a2.5 2.5 0 0 0-3.5 0l-4.4 4.3a2.5 2.5 0 0 0 3.5 3.5l2.3-2.3a7.5 7.5 0 0 0 3.6.7l-3.8 3.7Z"/>
+            </svg>
+            Paper
+          </a>
+        </div>
+      </article>
+    </div>
+    <div class="row">
+      <aside>
+        <p>CHI 2025</p>
+      </aside>
+      <article>
+        <p>AI Literacy Education for Older Adults: Motivations, Challenges and Preferences</p>
+        <p>Eugene Tang KangJie, Tianqi Song, <strong>Zicheng Zhu</strong>, Jingshu Li, and Yi-Chieh Lee</p>
+        <p><em>Proceedings of the CHI Conference Extended Abstracts on Human Factors in Computing Systems</em></p>
+        <div class="publication-links">
+          <a href="https://dl.acm.org/doi/10.1145/3706599.3720033" target="_blank" rel="noopener noreferrer">
+            <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M14.1 2.2a5.5 5.5 0 0 1 7.7 7.7l-4.3 4.3a5.5 5.5 0 0 1-7.8 0l2.1-2.1a2.5 2.5 0 0 0 3.5 0l4.4-4.3a2.5 2.5 0 0 0-3.5-3.5l-2.3 2.3a7.5 7.5 0 0 0-3.6-.7l3.8-3.7ZM9.9 21.8a5.5 5.5 0 0 1-7.7-7.7l4.3-4.3a5.5 5.5 0 0 1 7.8 0l-2.1 2.1a2.5 2.5 0 0 0-3.5 0l-4.4 4.3a2.5 2.5 0 0 0 3.5 3.5l2.3-2.3a7.5 7.5 0 0 0 3.6.7l-3.8 3.7Z"/>
+            </svg>
+            Paper
+          </a>
+        </div>
+      </article>
+    </div>
+    <div class="row">
+      <aside>
+        <p>CHI 2025</p>
+      </aside>
+      <article>
+        <p>Humans Help Conversational AI: Exploring the Impact of Perceived AI Deservingness on People’s Decisions to Help and Their Perceptions on AI Seeking Help</p>
+        <p>Yu-An Chen, <strong>Zicheng Zhu</strong>, and Yi-Chieh Lee</p>
+        <p><em>Proceedings of the CHI Conference Extended Abstracts on Human Factors in Computing Systems</em><em></em></p>
+        <div class="publication-links">
+          <a href="https://dl.acm.org/doi/10.1145/3706599.3720012" target="_blank" rel="noopener noreferrer">
+            <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M14.1 2.2a5.5 5.5 0 0 1 7.7 7.7l-4.3 4.3a5.5 5.5 0 0 1-7.8 0l2.1-2.1a2.5 2.5 0 0 0 3.5 0l4.4-4.3a2.5 2.5 0 0 0-3.5-3.5l-2.3 2.3a7.5 7.5 0 0 0-3.6-.7l3.8-3.7ZM9.9 21.8a5.5 5.5 0 0 1-7.7-7.7l4.3-4.3a5.5 5.5 0 0 1 7.8 0l-2.1 2.1a2.5 2.5 0 0 0-3.5 0l-4.4 4.3a2.5 2.5 0 0 0 3.5 3.5l2.3-2.3a7.5 7.5 0 0 0 3.6.7l-3.8 3.7Z"/>
+            </svg>
+            Paper
+          </a>
+        </div>
+      </article>
+    </div>
+    <div class="row">
+      <aside>
+        <p>CHI 2022</p>
+      </aside>
+      <article>
+        <p>Developing Intentional Relationships with Technologies: Exploring Players’ Tension between Play and Non-play and Designing Built-in Interventions to Contribute to Digital Well-Being</p>
+        <p><strong>Zicheng Zhu</strong></p>
+        <p><em>Proceedings of the CHI Conference Extended Abstracts on Human Factors in Computing Systems</em></p>
+        <div class="publication-links">
+          <a href="https://dl.acm.org/doi/10.1145/3491101.3503815" target="_blank" rel="noopener noreferrer">
+            <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M14.1 2.2a5.5 5.5 0 0 1 7.7 7.7l-4.3 4.3a5.5 5.5 0 0 1-7.8 0l2.1-2.1a2.5 2.5 0 0 0 3.5 0l4.4-4.3a2.5 2.5 0 0 0-3.5-3.5l-2.3 2.3a7.5 7.5 0 0 0-3.6-.7l3.8-3.7ZM9.9 21.8a5.5 5.5 0 0 1-7.7-7.7l4.3-4.3a5.5 5.5 0 0 1 7.8 0l-2.1 2.1a2.5 2.5 0 0 0-3.5 0l-4.4 4.3a2.5 2.5 0 0 0 3.5 3.5l2.3-2.3a7.5 7.5 0 0 0 3.6.7l-3.8 3.7Z"/>
+            </svg>
+            Paper
+          </a>
+        </div>
+      </article>
+    </div>
+
+    <!-- Conference Presentations (Non-archival) -->
+    <h2>Conference Presentations (Non-archival)</h2>
+    <div class="row">
+      <aside>
+        <p>AAAI 2026</p>
+      </aside>
+      <article>
+        <p>Multi-Agents are Social Groups: Investigating Social Influence of Multiple Agents in Human-Agent Interactions</p>
+        <p>Tianqi Song, Yugin Tan, <strong>Zicheng Zhu</strong>, Yibin Feng, and Yi-Chieh Lee</p>
+        <p><em>The Association for the Advancement of Artificial Intelligence Workshop</em></p>
+        <div class="publication-links">
+          <span class="award">
+            <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M7 2h10v2h5v4c0 3.3-2.7 6-6 6h-.1a5 5 0 0 1-2.4 1.8V19H17v3H7v-3h3.5v-3.2A5 5 0 0 1 8.1 14H8c-3.3 0-6-2.7-6-6V4h5V2ZM7 6H4v2a4 4 0 0 0 3 3.9V6Zm10 0v5.9A4 4 0 0 0 20 8V6h-3Z"/>
+            </svg>
+            Oral
+          </span>
+          <span class="award">
+            <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M7 2h10v2h5v4c0 3.3-2.7 6-6 6h-.1a5 5 0 0 1-2.4 1.8V19H17v3H7v-3h3.5v-3.2A5 5 0 0 1 8.1 14H8c-3.3 0-6-2.7-6-6V4h5V2ZM7 6H4v2a4 4 0 0 0 3 3.9V6Zm10 0v5.9A4 4 0 0 0 20 8V6h-3Z"/>
+            </svg>
+            Best Paper Award
+          </span>
+        </div>
+      </article>
+    </div>
+    <div class="row">
+      <aside>
+        <p>ICLR 2025</p>
+      </aside>
+      <article>
+        <p>The More, The Stronger? Investigating How Multi-Agent AI Shapes Human Opinions</p>
+        <p>Tianqi Song, Yugin Tan, <strong>Zicheng Zhu</strong>, Maojia Song, Feng Yibin, and Yi-Chieh Lee</p>
+        <p><em>International Conference on Learning Representations Workshop</em></p>
+        <div class="publication-links">
+          <span class="award">
+            <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M7 2h10v2h5v4c0 3.3-2.7 6-6 6h-.1a5 5 0 0 1-2.4 1.8V19H17v3H7v-3h3.5v-3.2A5 5 0 0 1 8.1 14H8c-3.3 0-6-2.7-6-6V4h5V2ZM7 6H4v2a4 4 0 0 0 3 3.9V6Zm10 0v5.9A4 4 0 0 0 20 8V6h-3Z"/>
+            </svg>
+            Spotlight
+          </span>
+        </div>
+      </article>
+    </div>
+    <div class="row">
+      <aside>
+        <p>ICA 2025</p>
+      </aside>
+      <article>
+        <p>Multi-Agents are Social Groups: Investigating Social Influence of Multiple Agents in Human-Agent Interactions</p>
+        <p>Tianqi Song, Yugin Tan, <strong>Zicheng Zhu</strong>, Yibin Feng, and Yi-Chieh Lee</p>
+        <p><em>International Communication Association Conference</em></p>
+        <div class="publication-links">
+          <span class="award">
+            <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M7 2h10v2h5v4c0 3.3-2.7 6-6 6h-.1a5 5 0 0 1-2.4 1.8V19H17v3H7v-3h3.5v-3.2A5 5 0 0 1 8.1 14H8c-3.3 0-6-2.7-6-6V4h5V2ZM7 6H4v2a4 4 0 0 0 3 3.9V6Zm10 0v5.9A4 4 0 0 0 20 8V6h-3Z"/>
+            </svg>
+            Top Paper Award
+          </span>
+        </div>
+      </article>
+    </div>
+    <div class="row">
+      <aside>
+        <p>ICA 2025</p>
+      </aside>
+      <article>
+        <p>Exploring the Effects of Chatbot Anthropomorphism and Human Empathy on Human Prosocial Behavior Toward Chatbots</p>
+        <p>Jingshu Li, <strong>Zicheng Zhu</strong>, Renwen Zhang, and Yi-Chieh Lee</p>
+        <p><em>International Communication Association Conference </em></p>
+      </article>
+    </div>
+    <div class="row">
+      <aside>
+        <p>ICA 2023</p>
+      </aside>
+      <article>
+        <p>When Will I Stop My In-Progress Game? Understanding the Role of Game Accomplishment, Multiple-Goal Pursuits, and Strain in Gameplay Disengagement</p>
+        <p><strong>Zicheng Zhu</strong>, Renwen Zhang, Mitchell Alex, and Zhuo Chen</p>
+        <p><em>International Communication Association Pre-Conference </em></p>
+      </article>
+    </div>
+    <div class="row">
+      <aside>
+        <p>ICA 2023</p>
+      </aside>
+      <article>
+        <p>Persuasive Effects of Health Messages in Short Videos: A Systematic Review of Literature</p>
+        <p><strong>Zicheng Zhu</strong>, Shiyu Liu, and Renwen Zhang</p>
+        <p><em>International Communication Association Conference </em></p>
+      </article>
+    </div>
+    <div class="row">
+      <aside>
+        <p>ICA 2023</p>
+      </aside>
+      <article>
+        <p>Combating Contextual Problematic Gaming Through Context Transformation</p>
+        <p><strong>Zicheng Zhu</strong>, Renwen Zhang, and Alex Mitchell </p>
+        <p><em>International Communication Association Conference </em></p>
+      </article>
+    </div>
+    <div class="row">
+      <aside>
+        <p>ICA 2022</p>
+      </aside>
+      <article>
+        <p>Prosocial and Toxic Behaviors in Massively Multiplayer Online Games: The Role of Perceived Interdependence and Passion</p>
+        <p><strong>Zicheng Zhu</strong>, Renwen Zhang, and Yuren Qin</p>
+        <p><em>International Communication Association Conference </em></p>
+      </article>
+    </div>
+
+    <!-- Honors and Awards -->
+    <h2>Honors and Awards</h2>
+    <div class="row">
+      <aside>
+        <p>2026</p>
+      </aside>
+      <article>
+        <p>Best Paper Honorable Mention Award (ACM CHI, top 5%)</p>
+      </article>
+    </div>
+    <div class="row">
+      <aside>
+        <p>2026</p>
+      </aside>
+      <article>
+        <p>Oral (AAAI Workshop)</p>
+      </article>
+    </div>
+    <div class="row">
+      <aside>
+        <p>2025</p>
+      </aside>
+      <article>
+        <p>Best Paper Award (ACM CHI, top 1%)</p>
+      </article>
+    </div>
+    <div class="row">
+      <aside>
+        <p>2025</p>
+      </aside>
+      <article>
+        <p>Methods Recognitions (CSCW)</p>
+      </article>
+    </div>
+    <div class="row">
+      <aside>
+        <p>2025</p>
+      </aside>
+      <article>
+        <p>Spotlight (ICLR HAIC Workshop)</p>
+      </article>
+    </div>
+    <div class="row">
+      <aside>
+        <p>2025</p>
+      </aside>
+      <article>
+        <p>Top Paper Award (ICA)</p>
+      </article>
+    </div>
+    <div class="row">
+      <aside>
+        <p>2021</p>
+      </aside>
+      <article>
+        <p>Graduate Students&#x27; Teaching Award (Honour Roll)</p>
+      </article>
+    </div>
+    <div class="row">
+      <aside>
+        <p>2021</p>
+      </aside>
+      <article>
+        <p>Graduate Students&#x27; Teaching Award</p>
+      </article>
+    </div>
+    <div class="row">
+      <aside>
+        <p>2020</p>
+      </aside>
+      <article>
+        <p>Graduate Students&#x27; Teaching Award</p>
+      </article>
+    </div>
+
+    <!-- Grants and Fellowships -->
+    <h2>Grants and Fellowships</h2>
+    <div class="row">
+      <aside>
+        <p>2023</p>
+      </aside>
+      <article>
+        <p>International Association of Cultural and Creative Industry Research Funding ($10,000)</p>
+      </article>
+    </div>
+    <div class="row">
+      <aside>
+        <p>2022</p>
+      </aside>
+      <article>
+        <p>Graduate Research Support Scheme (S$3,000)</p>
+      </article>
+    </div>
+    <div class="row">
+      <aside>
+        <p>2022</p>
+      </aside>
+      <article>
+        <p>Summer Institute in Computational Social Science (S$2,000)</p>
+      </article>
+    </div>
+    <div class="row">
+      <aside>
+        <p>2019</p>
+      </aside>
+      <article>
+        <p>Graduate Teaching Fellowship</p>
+      </article>
+    </div>
+    <div class="row">
+      <aside>
+        <p>2017</p>
+      </aside>
+      <article>
+        <p>Boston University Scholarship ($15,000)</p>
+      </article>
+    </div>
+    <div class="row">
+      <aside>
+        <p>2017</p>
+      </aside>
+      <article>
+        <p>School of Communication and Design Elite Development Scholarship</p>
+      </article>
+    </div>
+    <div class="row">
+      <aside>
+        <p>2015</p>
+      </aside>
+      <article>
+        <p>School of Communication and Design Scholarship</p>
+      </article>
+    </div>
+    <div class="row">
+      <aside>
+        <p>2015</p>
+      </aside>
+      <article>
+        <p>University of Technology Sydney Cheung Kong Scholarship (A$5,000)</p>
+      </article>
+    </div>
+
+    <!-- Teaching Assistant -->
+    <h2>Teaching Assistant</h2>
+    <div class="row">
+      <aside>
+        <p>2022 Fall - </p>
+        <p>2023 Spring</p>
+      </aside>
+      <article>
+        <p>NM2103: Quantitative Research Methods</p>
+        <p>Department of Communications and New Media, National University of Singapore</p>
+      </article>
+    </div>
+    <div class="row">
+      <aside>
+        <p>2020 Spring - </p>
+        <p>2021 Fall</p>
+      </aside>
+      <article>
+        <p>NM3217: Principles of Communication Design</p>
+        <p>Department of Communications and New Media, National University of Singapore</p>
+      </article>
+    </div>
+    <div class="row">
+      <aside>
+        <p>2019 Fall</p>
+      </aside>
+      <article>
+        <p>NM3234: Leadership, Organisations and New Media</p>
+        <p>Department of Communications and New Media, National University of Singapore</p>
+      </article>
+    </div>
+
+    <!-- Professional Service -->
+    <h2>Professional Service</h2>
+    <div class="row">
+      <aside>
+      </aside>
+      <article>
+        <p>Conference Chair</p>
+        <p>International Conference on Human-Engaged Computing (ICHEC)</p>
+        <p>NUS-Google Workshop: Future of CS Education and Curriculum in the AI Era</p>
+      </article>
+    </div>
+    <div class="row">
+      <aside>
+      </aside>
+      <article>
+        <p>Conference Committee</p>
+        <p>2027 The ACM CHI Conference on Human Factors in Computing Systems (CHI)</p>
+        <p>2026 The ACM Designing Interactive Systems Conference (DIS)</p>
+        <p>2024 The ACM Conference on Computer Supported Cooperative Work (CSCW)</p>
+      </article>
+    </div>
+    <div class="row">
+      <aside>
+      </aside>
+      <article>
+        <p>Conference Reviewer</p>
+        <p>ACM CHI Conference on Human Factors in Computing Systems (CHI)</p>
+        <p>The ACM Symposium on User Interface Software and Technology (UIST)</p>
+        <p>The ACM Conference on Computer Supported Cooperative Work (CSCW)</p>
+        <p>International Conference on Learning Representations (ICLR) </p>
+        <p>ACM SIGCHI Annual Symposium on Computer-Human Interaction in Play (CHI PLAY)</p>
+        <p>International Communication Association Conference</p>
+      </article>
+    </div>
+    <div class="row">
+      <aside>
+      </aside>
+      <article>
+        <p>Journal Reviewer</p>
+        <p>New Media &amp; Society</p>
+        <p>ACM Transactions on Computer-Human Interaction (TOCHI) </p>
+        <p>Cyberpsychology, Behavior, and Social Networking </p>
+        <p>International Journal of Health Communication </p>
+        <p>Mobile Media &amp; Communication</p>
+      </article>
+    </div>
+
+    <!-- University Service -->
+    <h2>University Service</h2>
+    <div class="row">
+      <aside>
+        <p>2023</p>
+      </aside>
+      <article>
+        <p>Summer Institute in Computational Social Science in Singapore</p>
+        <p>Organizer</p>
+      </article>
+    </div>
+    <div class="row">
+      <aside>
+        <p>2021 - 2022</p>
+      </aside>
+      <article>
+        <p>Graduate Student Representative</p>
+        <p>Department of Communications and New Media, National University of Singapore</p>
+      </article>
+    </div>
+    <div class="row">
+      <aside>
+        <p>2021</p>
+      </aside>
+      <article>
+        <p>Global Forum of Computational Social Science</p>
+        <p>Organizer</p>
+      </article>
+    </div>
+    <div class="row">
+      <aside>
+        <p>2021</p>
+      </aside>
+      <article>
+        <p>Books Week of Department of Communications and New Media</p>
+        <p>Organizer</p>
+      </article>
+    </div>
+    <div class="row">
+      <aside>
+        <p>2021</p>
+      </aside>
+      <article>
+        <p>Communications and New Media Graduate Student Conference</p>
+        <p>Organizer</p>
+      </article>
+    </div>
+
+    <!-- Work Experience -->
+    <h2>Work Experience</h2>
+    <div class="row">
+      <aside>
+        <p>2022</p>
+        <p>Singapore</p>
+      </aside>
+      <article>
+        <p>Centre for Trusted Internet and Community, National University of Singapore</p>
+        <p>Research Assistant</p>
+        <p>Project: Digital Well-being Indicator Framework</p>
+        <p>PI: Dr. Audrey Yue</p>
+      </article>
+    </div>
+    <div class="row">
+      <aside>
+        <p>2018</p>
+        <p>Guangzhou, China</p>
+      </aside>
+      <article>
+        <p>NetEase Games</p>
+        <p>Management Trainee</p>
+      </article>
+    </div>
+    <div class="row">
+      <aside>
+        <p>2018</p>
+        <p>Remote</p>
+      </aside>
+      <article>
+        <p>Pulitzer Center</p>
+        <p>Translator</p>
+      </article>
+    </div>
+    <div class="row">
+      <aside>
+        <p>2016</p>
+        <p>Hunan, China</p>
+      </aside>
+      <article>
+        <p>Hunan Broadcasting System</p>
+        <p>Director</p>
+      </article>
+    </div>
+    <div class="row">
+      <aside>
+        <p>2014</p>
+        <p>Shenzhen, China</p>
+      </aside>
+      <article>
+        <p>Shenzhen Evening News</p>
+        <p>Journalist</p>
+      </article>
+    </div>
+
+    <!-- Mentees (Non-advisees) -->
+    <h2>Mentees (Non-advisees)</h2>
+    <div class="row">
+      <aside>
+        <p>2025</p>
+      </aside>
+      <article>
+        <p>Zimo Xia </p>
+        <p>Centre for Data Science and Machine Learning, National University of Singapore</p>
+        <p>The Influence of AI Clone on Its Owner</p>
+        <p>Paper submitted to CHI 2026 </p>
+      </article>
+    </div>
+    <div class="row">
+      <aside>
+        <p>2024</p>
+      </aside>
+      <article>
+        <p>Ann Chen </p>
+        <p>Yale-NUS College</p>
+        <p>The Influence of Humans Providing Help to AI</p>
+        <p>Paper submitted to International Journal of Human-Computer Studies</p>
+      </article>
+    </div>
+    <div class="row">
+      <aside>
+        <p>2024</p>
+      </aside>
+      <article>
+        <p>Yuanxin Ma</p>
+        <p>School of Computing, National University of Singapore</p>
+        <p>The Influence of AI Representative on the Social Perception of Its Owner</p>
+        <p>Mentored undergraduate thesis</p>
+      </article>
+    </div>
+    <div class="row">
+      <aside>
+        <p>2024</p>
+      </aside>
+      <article>
+        <p>Jefferson Lim</p>
+        <p>School of Computing, National University of Singapore</p>
+        <p>The Influence of Similarity on Help Seeking from Chatbots</p>
+        <p>Paper accepted to CSCW 2026 </p>
+      </article>
+    </div>
+    <div class="row">
+      <aside>
+        <p>2024</p>
+      </aside>
+      <article>
+        <p>Charles Loy</p>
+        <p>Yale-NUS College</p>
+        <p>The Influence of AI Gender on Decision Making</p>
+        <p>Mentored undergraduate thesis</p>
+      </article>
+    </div>
+
+    <!-- Skills -->
+    <h2>Skills</h2>
+    <div class="row">
+      <aside>
+      </aside>
+      <article>
+        <p>Languages: JavaScript, C#, Python, R</p>
+      </article>
+    </div>
+
+    <!-- References -->
+    <h2>References</h2>
+    <div class="row">
+      <aside>
+      </aside>
+      <article>
+        <p>Dr. Yi-Chieh Lee, Assistant Professor</p>
+        <p>Department of Computer Science</p>
+        <p>National University of Singapore</p>
+        <p>yclee@nus.edu.sg</p>
+        <p><a href="http://yclee.net" target="_blank" rel="noopener noreferrer">yclee.net</a></p>
+      </article>
+    </div>
+    <div class="row">
+      <aside>
+      </aside>
+      <article>
+        <p>Dr. Renwen Zhang, Assistant Professor</p>
+        <p>Wee Kim Wee School of Communication and Information</p>
+        <p>Nanyang Technological University</p>
+        <p>renwen.zhang@ntu.edu.sg</p>
+        <p><a href="http://renwenzhang.com" target="_blank" rel="noopener noreferrer">renwenzhang.com</a></p>
+      </article>
+    </div>
+    <div class="row">
+      <aside>
+      </aside>
+      <article>
+        <p>Dr. Alex Mitchell, Associate Professor</p>
+        <p>Department of Communications and New Media</p>
+        <p>National University of Singapore</p>
+        <p>alexm@nus.edu.sg</p>
+        <p><a href="http://www.narrativeandplay.org/~alex/" target="_blank" rel="noopener noreferrer">narrativeandplay.org/~alex/</a></p>
+      </article>
+    </div>
+    <div class="row">
+      <aside>
+      </aside>
+      <article>
+        <p>Dr. Naomi Yamashita, Professor</p>
+        <p>Graduate School of Informatics</p>
+        <p>Kyoto University</p>
+        <p>naomiy@acm.org</p>
+      </article>
+    </div>
+    <div class="row">
+      <aside>
+      </aside>
+      <article>
+        <p>Dr. Chi-Lan Yang, Associate Professor</p>
+        <p>Institute of Library, Information and Media Science</p>
+        <p>University of Tsukuba</p>
+        <p>chilanyang@slis.tsukuba.ac.jp</p>
+        <p><a href="https://www.chilanyang.space/" target="_blank" rel="noopener noreferrer">chilanyang.space</a></p>
+      </article>
+    </div>
+  </body>
+</html>

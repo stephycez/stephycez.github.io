@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&display=swap');
+
+/* EasyScholar adds DOI shortcuts inside publication links in some browsers. */
+a.easyScholarDOI {
+  display: none !important;
+}
+
+a[href^="http"]:hover {
+  text-decoration: none;
+}
+
+@media screen {
+  html {
+    background: #fff;
+  }
+
+  body {
+    --date-width: 118px;
+    --column-gap: 24px;
+    width: 930px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 38px 16px 96px;
+    background: #fff;
+    box-shadow: none;
+    font-family: 'Source Sans 3', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+  }
+
+  header {
+    margin: 0 0 42px var(--content-offset);
+    padding-bottom: 28px;
+    border-bottom: 1px solid #dedede;
+  }
+
+  header p:first-child {
+    margin-bottom: 12px;
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 1.12;
+    letter-spacing: -0.03em;
+  }
+
+  header p:first-child a {
+    color: #333;
+  }
+
+  header p:first-child a:hover {
+    color: #8B65A5;
+    text-decoration: none;
+  }
+
+  header .intro {
+    margin-bottom: 14px;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  header .contacts {
+    gap: 1px 24px;
+    font-size: 14px;
+  }
+
+  header .contacts a {
+    color: #555;
+  }
+
+  header .contacts a:hover {
+    color: #8B65A5;
+  }
+
+  h2 {
+    margin: 38px 0 14px var(--content-offset);
+    font-size: 31px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: -0.025em;
+  }
+
+  .row {
+    gap: var(--column-gap);
+    margin-bottom: 16px;
+  }
+
+  aside {
+    width: var(--date-width);
+    flex-basis: var(--date-width);
+    padding-top: 3px;
+    color: #666;
+    font-size: 12px;
+    line-height: 1.4;
+  }
+
+  article {
+    font-size: 16px;
+    line-height: 1.45;
+  }
+
+  article p:first-child {
+    font-weight: 600;
+  }
+
+  article p:not(:first-child) {
+    color: #555;
+  }
+
+  a {
+    color: #8B65A5;
+  }
+
+  .publication-links {
+    gap: 3px 12px;
+    margin-top: 4px;
+    font-size: 14px;
+  }
+
+  .award {
+    color: #C97845;
+  }
+
+  .author-note {
+    font-size: inherit;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  body {
+    --date-width: 76px;
+    --column-gap: 14px;
+    padding: 28px 18px 64px;
+    font-size: 15px;
+  }
+
+  header {
+    margin-left: 0;
+    margin-bottom: 30px;
+    padding-bottom: 22px;
+  }
+
+  header p:first-child {
+    font-size: 36px;
+  }
+
+  header .intro,
+  article {
+    font-size: 15px;
+  }
+
+  header .contacts {
+    grid-template-columns: 1fr 1fr;
+    gap: 4px 12px;
+    font-size: 13px;
+  }
+
+  h2 {
+    margin: 32px 0 12px;
+    font-size: 27px;
+  }
+
+  aside {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  header .contacts {
+    grid-template-columns: 1fr;
+  }
+}
